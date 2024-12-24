@@ -1,80 +1,79 @@
-.wrapper {
-    max-width: 520px;
-    padding: 20px 0 0 0;
-    border: 3px solid black;
-    border-radius: 20px;
-    background-color: azure;
+.box {
+    width: 380px;
+    height: 418px;
     margin: 0 auto;
-    overflow: hidden;
+    border: solid #474a4d 3px;
+    border-radius: 10px;
+    padding-top: 26px;
+    background-color: #e6e7e9;
 }
 
-.container {
+.contact {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.avatar {
-    width: 250px;
-    margin: 0 auto;
+.img {
+    width: 144px;
+    height: 144px;
     border-radius: 50%;
-    background-color: #2a2a2a;
-    margin-bottom: 40px;
+    margin: 0 auto;
+    background-color: #474a4d;
 }
 
 .name {
-    font-size: 48px;
-    font-weight: 700;
-    color: #2a2a2a;
-    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    padding: 30px 0;
 }
 
 .tag {
-    font-size: 24px;
-    font-weight: 400;
-    color: darkgrey;
-    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    padding-bottom: 17px;
+    color: #85898c;
 }
 
-.location {
-    font-size: 24px;
-    font-weight: 400;
-    color: darkgrey;
-    margin-bottom: 20px;
+.ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-top: solid #7e8185 3px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    color: black;
+    background-color: #a9abae;
+    border-radius: 0 0 10px 10px;
+}
+
+.li {
+    width: calc(380px / 3);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.views {
+    width: calc(380px / 3);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px 0;
+    border-left: solid #7e8185 3px;
+    border-right: solid #7e8185 3px;
+    text-align: center;
 }
 
 .stats {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: calc(100% / 3);
-    padding: 20px;
-    font-size: 28px;
-    color: #000;
-    border-top: 3px solid #808080;
-    border-right: 3px solid #808080;
-    background-color: #d3d3d3;
-    gap: 5px;
-}
-
-.item:last-child {
-    border-right: none;
-}
-
-.label {
-    color: #000;
-    font-size: 24px;
-    font-weight: 400;
-}
-
-.quantity {
-    color: #000;
-    font-size: 24px;
-    font-weight: 700;
+    font-weight: 800;
 }

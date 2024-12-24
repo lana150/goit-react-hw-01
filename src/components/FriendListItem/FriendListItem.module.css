@@ -1,0 +1,28 @@
+.online {
+    color: green;
+    font-weight: 400;
+    font-size: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.offline {
+    color: red;
+    font-weight: 400;
+    font-size: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card {
+    justify-content: center;
+    margin: 20px;
+}
+
+.name {
+    color: black;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0 auto;
+    text-align: center;
+}

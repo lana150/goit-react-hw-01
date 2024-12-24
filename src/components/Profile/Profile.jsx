@@ -1,4 +1,44 @@
 import s from './Profile.module.css';
+
+const Profile = ({ name, tag, location, image, stats }) => {
+  return (
+    <div className={s.box}>
+      <div className={s.contact}>
+        <img className={s.img} src={image} alt="User avatar" />
+        <p className={s.name}>{name}</p>
+        <p className={s.tag}>@{tag}</p>
+        <p className={s.tag}>{location}</p>
+      </div>
+
+      <ul className={s.ul}>
+        <li className={s.li}>
+          <span>Followers</span>
+          <span className={s.stats}>{stats.followers}</span>
+        </li>
+        <li className={s.views}>
+          <span>Views</span>
+          <span className={s.stats}>{stats.views}</span>
+        </li>
+        <li className={s.li}>
+          <span>Likes</span>
+          <span className={s.stats}>{stats.likes}</span>
+        </li>
+      </ul>
+    </div>
+  );
+};
+
+export default Profile;
+
+
+
+
+
+
+
+
+
+/*import s from './Profile.module.css';
 const Profile = ({
   name,
   tag,
@@ -33,4 +73,4 @@ const Profile = ({
   );
 };
 
-export default Profile;
+export default Profile;*/
